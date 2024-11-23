@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hollow Knight - Guía y Consejos</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Hollow Knight</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre el Juego</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#guias">Guías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#consejos">Consejos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-section">
+      <div class="container text-center">
+        <img
+          src="/Imagenes/Hollow-Knight-Logo-PNG.png "
+          alt="Hollow Knight Logo"
+          class="logo-main animate__animated animate__fadeIn"
+        />
+        <h1 class="mt-4 animate__animated animate__fadeInUp">
+          Bienvenido a Hallownest
+        </h1>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Sobre Hollow Knight</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="game-description">
+              Hollow Knight es una aventura de acción clásica en 2D ambientada
+              en un vasto mundo interconectado. Explora cavernas serpenteantes,
+              ciudades antiguas y páramos mortales. Combate contra criaturas
+              corrompidas, haz amistad con extraños insectos y resuelve los
+              antiguos misterios que yacen en el corazón del reino.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <!-- Video Section -->
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                title="Hollow Knight Trailer"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Carousel -->
+    <!-- ... (código anterior sin cambios) -->
+
+    <!-- Reemplazando la sección del carrusel anterior -->
+    <section id="galeria" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Galería</h2>
+        <section
+          id="gameCarousel"
+          class="carousel"
+          aria-roledescription="carousel"
+          aria-label="Capturas de Hollow Knight"
+        >
+          <div class="carousel-inner">
+            <div class="controls">
+              <button
+                type="button"
+                class="rotation pause"
+                aria-label="Detener presentación automática"
+              >
+                <svg
+                  width="42"
+                  height="34"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="background"
+                    x="2"
+                    y="2"
+                    rx="5"
+                    ry="5"
+                    width="38"
+                    height="24"
+                  ></rect>
+                  <rect
+                    class="border"
+                    x="4"
+                    y="4"
+                    rx="5"
+                    ry="5"
+                    width="34"
+                    height="20"
+                  ></rect>
+                  <polygon class="pause" points="17 8 17 20"></polygon>
+                  <polygon class="pause" points="24 8 24 20"></polygon>
+                  <polygon class="play" points="15 8 15 20 27 14"></polygon>
+                </svg>
+              </button>
+
+              <button
+                type="button"
+                class="previous"
+                aria-controls="gameCarousel-items"
+                aria-label="Imagen Anterior"
+              >
+                <svg
+                  width="42"
+                  height="34"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="background"
+                    x="2"
+                    y="2"
+                    rx="5"
+                    ry="5"
+                    width="38"
+                    height="24"
+                  ></rect>
+                  <rect
+                    class="border"
+                    x="4"
+                    y="4"
+                    rx="5"
+                    ry="5"
+                    width="34"
+                    height="20"
+                  ></rect>
+                  <polygon
+                    points="9 14 21 8 21 11 33 11 33 17 21 17 21 20"
+                  ></polygon>
+                </svg>
+              </button>
+
+              <button
+                type="button"
+                class="next"
+                aria-controls="gameCarousel-items"
+                aria-label="Siguiente Imagen"
+              >
+                <svg
+                  width="42"
+                  height="34"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="background"
+                    x="2"
+                    y="2"
+                    rx="5"
+                    ry="5"
+                    width="38"
+                    height="24"
+                  ></rect>
+                  <rect
+                    class="border"
+                    x="4"
+                    y="4"
+                    rx="5"
+                    ry="5"
+                    width="34"
+                    height="20"
+                  ></rect>
+                  <polygon
+                    points="9 11 21 11 21 8 33 14 21 20 21 17 9 17"
+                  ></polygon>
+                </svg>
+              </button>
+            </div>
+
+            <div id="gameCarousel-items" class="carousel-items" aria-live="off">
+              <div
+                class="carousel-item active"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="1 of 4"
+              >
+                <div class="carousel-image">
+                  <a href="#">
+                    <img
+                      src="/Imagenes/CiudaDeLagrimas.jpg"
+                      alt="Ciudad de Lágrimas - Una majestuosa ciudad subterránea con lluvia eterna"
+                    />
+                  </a>
+                </div>
+                <div class="carousel-caption">
+                  <h3>
+                    <a href="#" id="carousel-label-1">Ciudad de Lágrimas</a>
+                  </h3>
+                  <div class="caption-description">
+                    <p>La majestuosa capital de Hallownest</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="carousel-item"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="2 of 4"
+              >
+                <div class="carousel-image">
+                  <a href="#">
+                    <img
+                      src="/Imagenes/SenderosVerdes.jpg"
+                      alt="Senderos Verdes - Un área llena de vegetación y criaturas hostiles"
+                    />
+                  </a>
+                </div>
+                <div class="carousel-caption">
+                  <h3>
+                    <a href="#" id="carousel-label-2">Senderos Verdes</a>
+                  </h3>
+                  <div class="caption-description">
+                    <p>El primer gran área del juego</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="carousel-item"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="3 of 4"
+              >
+                <div class="carousel-image">
+                  <a href="#">
+                    <img
+                      src="/Imagenes/NidoProfundo.jpg"
+                      alt="Nido Profundo - Las profundidades oscuras del reino"
+                    />
+                  </a>
+                </div>
+                <div class="carousel-caption">
+                  <h3>
+                    <a href="#" id="carousel-label-3">Nido Profundo</a>
+                  </h3>
+                  <div class="caption-description">
+                    <p>Las misteriosas profundidades del reino</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="carousel-item"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="4 of 4"
+              >
+                <div class="carousel-image">
+                  <a href="#">
+                    <img
+                      src="/Imagenes/ColiseoInsensatos.jpg"
+                      alt="Coliseo de los Insensatos - Arena de combate"
+                    />
+                  </a>
+                </div>
+                <div class="carousel-caption">
+                  <h3>
+                    <a href="#" id="carousel-label-4"
+                      >Coliseo de los Insensatos</a
+                    >
+                  </h3>
+                  <div class="caption-description">
+                    <p>Prueba tu valentía en la arena de combate</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ... (resto del código sin cambios) -->
+
+    <!-- Guides Section -->
+    <section id="guias" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Guías y Consejos</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card guide-card">
+              <div class="card-body">
+                <h3 class="card-title">Principiantes</h3>
+                <p class="card-text">
+                  Guía básica para comenzar tu aventura en Hallownest.
+                </p>
+                <button
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#guideModal1"
+                >
+                  Leer más
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card guide-card">
+              <div class="card-body">
+                <h3 class="card-title">Jefes</h3>
+                <p class="card-text">
+                  Estrategias para derrotar a los jefes más difíciles.
+                </p>
+                <button
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#guideModal2"
+                >
+                  Leer más
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card guide-card">
+              <div class="card-body">
+                <h3 class="card-title">Secretos</h3>
+                <p class="card-text">
+                  Descubre los secretos ocultos del juego.
+                </p>
+                <button
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#guideModal3"
+                >
+                  Leer más
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>Creado con ♥ para la comunidad de Hollow Knight</p>
+        <div class="social-links d-flex justify-content-center">
+          <!-- Twitter -->
+          <img
+            tabindex="0"
+            role="link"
+            onclick="goToLink(event, 'https://twitter.com')"
+            onkeydown="goToLink(event, 'https://twitter.com')"
+            src="/Imagenes/twitter.png"
+            alt="Twitter"
+            class="me-3"
+            style="cursor: pointer; width: 40px"
+          />
+          <!-- Discord -->
+          <img
+            tabindex="0"
+            role="link"
+            onclick="goToLink(event, 'https://discord.com')"
+            onkeydown="goToLink(event, 'https://discord.com')"
+            src="ruta-discord-logo.svg"
+            alt="Discord"
+            class="me-3"
+            style="cursor: pointer; width: 40px"
+          />
+          <!-- Reddit -->
+          <img
+            tabindex="0"
+            role="link"
+            onclick="goToLink(event, 'https://reddit.com')"
+            onkeydown="goToLink(event, 'https://reddit.com')"
+            src="ruta-reddit-logo.svg"
+            alt="Reddit"
+            style="cursor: pointer; width: 40px"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modales para las guías -->
+    <div class="modal fade" id="guideModal1" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Guía para Principiantes</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Contenido de la guía para principiantes -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
